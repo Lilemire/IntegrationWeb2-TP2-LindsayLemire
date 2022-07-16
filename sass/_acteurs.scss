@@ -1,0 +1,16 @@
+@use "variables";
+
+.acteurs {
+    padding: 2rem;
+}
+
+.acteurs__image {
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.acteurs__card {
+    background-color: variables.$color-10;
+    padding: 0.5rem;
+    border: solid 0.25rem variables.$color-6;
+}

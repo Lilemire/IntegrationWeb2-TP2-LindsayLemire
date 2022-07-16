@@ -1,0 +1,36 @@
+@use "variables";
+@use "sectionrow";
+
+.extraits {
+    padding: 2rem;
+    text-align: center;
+
+    form {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.input-control {
+    margin-right: 0.5rem;
+}
+
+.inscriptionreussi {
+    h1 {
+        text-align: center;
+        color: variables.$color-10;
+    }
+}
+
+#submit {
+    @extend .btn__row;
+    border: none;
+}
+
+.extraits__image {
+    width: 100%;
+}
+
+.extraits__video {
+    margin-top: 2rem;
+}

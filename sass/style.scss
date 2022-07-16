@@ -2,6 +2,8 @@
 @use "variables";
 @use "header";
 @use "sectionrow";
+@use "extraits";
+@use "acteurs";
 
 body {
     background-color: variables.$color-6;
@@ -13,6 +15,27 @@ h1 {
     color: variables.$color-3;
 }
 
+h2 {
+    font-family : variables.$police-2;
+    color : variables.$color-4;
+}
+
+h3 {
+    font-family : variables.$police-2;
+    color : variables.$color-5;
+}
+
 p {
     font-family : variables.$police-2;
+}
+
+.container {
+    background-color : variables.$color-9;
+    border-radius: 2rem;
+    border: solid 0.25rem variables.$color-1;
+    margin-bottom: 1rem;
+}
+
+.row {
+padding: 2rem;
 }
