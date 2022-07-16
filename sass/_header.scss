@@ -1,0 +1,27 @@
+@use "variables";
+
+header {
+    background-color: variables.$color-9;
+    border-bottom: 0.25rem solid variables.$color-1;
+    margin-bottom: 1rem;
+}
+
+.header__img {
+    width: 35%;
+}
+
+.header__nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.header__form {
+    .btn__header {
+        font-family: variables.$police-1;
+        font-weight: 700;
+    }
+}
+
+.header__img--icon {
+    width: 1.5rem;
+}

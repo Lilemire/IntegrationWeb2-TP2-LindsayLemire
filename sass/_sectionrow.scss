@@ -1,0 +1,46 @@
+@use "variables";
+
+.container {
+    background-color : variables.$color-9;
+    border-radius: 2rem;
+    border: solid 0.25rem variables.$color-1;
+}
+
+.row {
+padding: 2rem;
+}
+
+/* Présentation de l'oeuvre */
+
+
+.btn__row {
+    font-family: variables.$police-2;
+    font-weight: 700;
+    background-color: variables.$color-7;
+    color: variables.$color-1;
+
+    &:hover {
+        background-color: variables.$color-3;
+        color: variables.$color-10;
+    }
+}
+
+.btn__row--important {
+    @extend .btn__row;
+    background-color: variables.$color-4;
+    color: variables.$color-10;
+    box-shadow: 0px 1px 5px variables.$color-1;
+
+    &:hover {
+        background-color: variables.$color-2;
+        color: variables.$color-9;
+    }
+}
+
+/* Carrousel */
+
+.carousel-item {
+    img {
+        height : 600px;
+    }
+}
