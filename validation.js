@@ -26,12 +26,12 @@ const isValidCourriel = courriel => {
 
 const validateForm = () => {
     let noError = true;
-    const courrielValue = courriel.ariaValueMax.trim();
+    const courrielValue = courriel.value.trim();
 
-    if (courrielValue === ' ') {
+    if (courrielValue === '') {
         setError(courriel, 'Le courriel est necessaire');
         noError = false;
-    } else if (courrielValue.length < 8) {
+    } else if (!isValidCourriel(courrielValue)) {
         setError(courriel, 'Entrez un courriel valide');
         noError = false;
     } else {

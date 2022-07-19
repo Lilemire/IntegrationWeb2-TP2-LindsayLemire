@@ -47,45 +47,40 @@
                         Acheter maintenant</button>
                 </div>
                 <div class="col-lg-6">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="images/carousel1.jpg"
-                                    alt="Pirates des Caraibes : La malédiction du Black Pearl">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/carousel2.jpg"
-                                    alt="Pirates des Caraibes : Le secret du coffre maudit">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/carousel3.jpg"
-                                    alt="Pirates des Caraibes : Jusqu'au bout du monde">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/carousel4.jpg"
-                                    alt="Pirates des Caraibes : La fontaine de jouvence">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/carousel5.jpg"
-                                    alt="Pirates des Caraibes : La vengeance de Salazar">
-                            </div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Précédant</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Suivant</span>
-                        </a>
-                    </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./images/carousel1.jpg" class="d-block w-100" alt="Pirates des Caraibes : La malédiction du Black Pearl">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel2.jpg" class="d-block w-100" alt="Pirates des Caraibes : Le secret du coffre maudit">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel3.jpg" class="d-block w-100" alt="Pirates des Caraibes : Jusqu'au bout du monde">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel4.jpg" class="d-block w-100" alt="Pirates des Caraibes : La fontaine de jouvence">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel5.jpg" class="d-block w-100" alt="Pirates des Caraibes : La vengeance de Salazar">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                 </div>
             </div>
         </div>
@@ -94,7 +89,7 @@
             <div class="extraits">
                 <h1>Images et extraits</h1>
                 <p>Entrez votre courriel pour en savoir plus</p>
-                <form id="form" action="sinscrire.html" onsubmit="return validateForm()">
+                <form id="form" action="sinscrire.html" novalidate onsubmit="return validateForm()">
                     <div class="input-control">
                         <input id="courrielInput" name="courrielInput" type="email">
                         <div class="errorMessage"></div>
@@ -170,8 +165,8 @@
     </main>
 
     <script src="validation.js"></script>
+    <script src="bootstrap-5.2.0-beta1\dist\js\bootstrap.bundle.js"></script>
 </body>
 
 </html>
 
-<script src="bootstrap-5.2.0-beta1\dist\js\bootstrap.bundle.js"></script>
