@@ -10974,6 +10974,10 @@ header {
   margin-right: 7%;
 }
 
+.resume__img {
+  width: 100%;
+}
+
 body {
   background-color: rgb(229, 56, 59);
 }
