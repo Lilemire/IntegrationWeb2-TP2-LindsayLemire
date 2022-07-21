@@ -10957,6 +10957,7 @@ header {
 .acteurs__image {
   width: 100%;
   margin-bottom: 0.75rem;
+  border-radius: 1rem;
 }
 
 .acteurs__card {
@@ -10976,6 +10977,43 @@ header {
 
 .resume__img {
   width: 100%;
+}
+
+footer {
+  background-color: rgb(102, 7, 8);
+  border-top: solid 0.25rem rgb(255, 255, 255);
+  padding-top: 1rem;
+}
+
+.footer__lien--tel, .footer__lien--mail {
+  width: 20%;
+}
+.footer__lien--tel img, .footer__lien--mail img {
+  height: 20%;
+}
+.footer__lien--tel a, .footer__lien--mail a {
+  text-decoration: none;
+  color: rgb(11, 9, 10);
+}
+.footer__lien--tel a:hover, .footer__lien--mail a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.footer__lien {
+  display: flex;
+}
+
+.footer__icons img {
+  width: 3%;
+  margin-right: 1rem;
+}
+
+.footer__nomicons {
+  display: flex;
+}
+
+.footer__flex {
+  display: flex;
 }
 
 body {

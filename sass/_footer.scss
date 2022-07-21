@@ -1,0 +1,47 @@
+@use "variables";
+
+footer {
+    background-color: variables.$color-3;
+    border-top: solid 0.25rem variables.$color-10;
+    padding-top: 1rem;
+}
+
+.footer__lien--tel {
+    width: 20%;
+
+    img {
+        height: 20%;
+    }
+
+    a {
+        text-decoration: none;
+        color: variables.$color-1;
+
+        &:hover {
+            color: variables.$color-10;
+        }
+    }
+}
+
+.footer__lien--mail {
+    @extend .footer__lien--tel;
+}
+
+.footer__lien {
+    display: flex;
+}
+
+.footer__icons {
+    img {
+        width: 3%;
+        margin-right: 1rem;
+    }
+}
+
+.footer__nomicons {
+    display: flex;
+}
+
+.footer__flex {
+    display: flex;
+}
