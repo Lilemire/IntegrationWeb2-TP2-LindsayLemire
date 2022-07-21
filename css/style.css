@@ -10963,7 +10963,15 @@ header {
   background-color: rgb(255, 255, 255);
   padding: 0.5rem;
   border: solid 0.25rem rgb(229, 56, 59);
-  justify-content: space-between;
+}
+
+.acteurs__icons {
+  display: flex;
+}
+
+.icons {
+  width: 15%;
+  margin-right: 7%;
 }
 
 body {
