@@ -6,6 +6,7 @@
 @use "acteurs";
 @use "resume";
 @use "footer";
+@use "tournage";
 
 body {
     background-color: variables.$color-6;

@@ -11049,6 +11049,28 @@ iframe {
   color: rgb(211, 211, 211);
 }
 
+.faitdivers__image {
+  width: 100%;
+}
+
+.tournage__image {
+  width: 100%;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.developpement {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .faitdivers__flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .developpement {
+    text-align: center;
+  }
+}
 body {
   background-color: rgb(229, 56, 59);
 }
