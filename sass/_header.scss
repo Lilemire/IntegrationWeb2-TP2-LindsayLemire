@@ -25,3 +25,39 @@ header {
 .header__img--icon {
     width: 1.5rem;
 }
+
+@media screen and (max-width: 1400px) {
+    .generalnavbar {
+        display: block;
+    }
+    .burgernavbar, .flex__header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .generalnavbar {
+        display: block;
+    }
+    .burgernavbar, .flex__header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .generalnavbar {
+        display: none;
+    }
+    .burgernavbar {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .flex__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .p-4 {
+        text-align: right;
+    }
+}

@@ -16,15 +16,50 @@
 <body>
 
     <header>
-        <nav class="navbar">
-            <form class="container-fluid header__nav">
-                <img class="header__img" src="images/logo-pirates-des-caraibes.svg" alt="Logo Pirates des Caraibes">
-                <div class="header__form">
-                    <button onclick="window.location.href = 'index.html';" class="btn btn__header me-2" type="button"><img class="header__img--icon" src="images/accueil-icon.svg" alt="Icon d'accueil"> Accueil</button>
-                    <button onclick="window.location.href = 'tournage.html';" class="btn btn__header" type="button"><img class="header__img--icon" src="images/tournage-icon.svg" alt="Icon page tournage"> Tournage</button>
+        <div class="flex__header">
+            <img class="header__img" src="images/logo-pirates-des-caraibes.svg" alt="Logo Pirates des Caraibes">
+            <div class="burgernavbar">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class=" p-4">
+                        <button onclick="window.location.href = 'index.html';" class="btn btn__header me-2"
+                        type="button"><img class="header__img--icon" src="images/accueil-icon.svg"
+                            alt="Icon d'accueil">
+                        Accueil</button>
+                    <button onclick="window.location.href = 'tournage.html';" class="btn btn__header"
+                        type="button"><img class="header__img--icon" src="images/tournage-icon.svg"
+                            alt="Icon page tournage">
+                        Tournage</button>
+                    </div>
                 </div>
-            </form>
-        </nav>
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    
+            <div class="generalnavbar">
+                <nav class="navbar">
+                    <form class="container-fluid header__nav">
+                        <img class="header__img" src="images/logo-pirates-des-caraibes.svg" alt="Logo Pirates des Caraibes">
+                        <div class="header__form">
+                            <button onclick="window.location.href = 'index.html';" class="btn btn__header me-2"
+                                type="button"><img class="header__img--icon" src="images/accueil-icon.svg"
+                                    alt="Icon d'accueil">
+                                Accueil</button>
+                            <button onclick="window.location.href = 'tournage.html';" class="btn btn__header"
+                                type="button"><img class="header__img--icon" src="images/tournage-icon.svg"
+                                    alt="Icon page tournage">
+                                Tournage</button>
+                        </div>
+                    </form>
+                </nav>
+            </div>
     </header>
 
     <main>
@@ -32,8 +67,7 @@
             <h1>Votre courriel a été envoyé avec succès !</h1>
         </div>
     </main>
+    <script src="bootstrap-5.2.0-beta1\dist\js\bootstrap.bundle.js"></script>
 </body>
 
 </html>
-
-<script src="bootstrap-5.2.0-beta1\dist\js\bootstrap.bundle.js"></script>

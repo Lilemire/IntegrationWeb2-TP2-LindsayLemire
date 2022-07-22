@@ -19,19 +19,50 @@
 <body>
 
     <header>
-        <nav class="navbar">
-            <form class="container-fluid header__nav">
-                <img class="header__img" src="images/logo-pirates-des-caraibes.svg" alt="Logo Pirates des Caraibes">
-                <div class="header__form">
-                    <button onclick="window.location.href = 'index.html';" class="btn btn__header me-2"
-                        type="button"><img class="header__img--icon" src="images/accueil-icon.svg" alt="Icon d'accueil">
+        <div class="flex__header">
+            <img class="header__img" src="images/logo-pirates-des-caraibes.svg" alt="Logo Pirates des Caraibes">
+            <div class="burgernavbar">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class=" p-4">
+                        <button onclick="window.location.href = 'index.html';" class="btn btn__header me-2"
+                        type="button"><img class="header__img--icon" src="images/accueil-icon.svg"
+                            alt="Icon d'accueil">
                         Accueil</button>
-                    <button onclick="window.location.href = 'tournage.html';" class="btn btn__header" type="button"><img
-                            class="header__img--icon" src="images/tournage-icon.svg" alt="Icon page tournage">
+                    <button onclick="window.location.href = 'tournage.html';" class="btn btn__header"
+                        type="button"><img class="header__img--icon" src="images/tournage-icon.svg"
+                            alt="Icon page tournage">
                         Tournage</button>
+                    </div>
                 </div>
-            </form>
-        </nav>
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    
+            <div class="generalnavbar">
+                <nav class="navbar">
+                    <form class="container-fluid header__nav">
+                        <img class="header__img" src="images/logo-pirates-des-caraibes.svg" alt="Logo Pirates des Caraibes">
+                        <div class="header__form">
+                            <button onclick="window.location.href = 'index.html';" class="btn btn__header me-2"
+                                type="button"><img class="header__img--icon" src="images/accueil-icon.svg"
+                                    alt="Icon d'accueil">
+                                Accueil</button>
+                            <button onclick="window.location.href = 'tournage.html';" class="btn btn__header"
+                                type="button"><img class="header__img--icon" src="images/tournage-icon.svg"
+                                    alt="Icon page tournage">
+                                Tournage</button>
+                        </div>
+                    </form>
+                </nav>
+            </div>
     </header>
 
     <main>
@@ -51,23 +82,23 @@
                         Johnny Depp, qui réclame 50 millions de dollars à son ex-femme devant la
                         justice américaine.</p>
                     <div class="row">
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <h2>44M</h2>
                             <p>Sold for</p>
                         </div>
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <h2>3024B</h2>
                             <p>Daily content uploaded</p>
                         </div>
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <h2>230K</h2>
                             <p>Hourly active users</p>
                         </div>
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <h2>12</h2>
                             <p>Award won</p>
                         </div>
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                             <button type="button" class="btn btn__row" href="#" alt="Bouton Apprendre plus">En apprendre
                                 plus</button>
                         </div>
@@ -85,7 +116,7 @@
                 <div class="col-lg-4 col-md-6">
                     <img class="tournage__image" src="images/tournage2.jpg" alt="image de tournage 2">
                 </div>
-                <div class="col-lg-4 col-md-6 offset-md-3">
+                <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                     <img class="tournage__image" src="images/tournage3.jpg" alt="image de tournage 3">
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -94,7 +125,7 @@
                 <div class="col-lg-4 col-md-6">
                     <img class="tournage__image" src="images/tournage5.jpg" alt="image de tournage 5">
                 </div>
-                <div class="col-lg-4 col-md-6 offset-md-3">
+                <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-3">
                     <img class="tournage__image" src="images/tournage6.jpg" alt="image de tournage 6">
                 </div>
             </div>

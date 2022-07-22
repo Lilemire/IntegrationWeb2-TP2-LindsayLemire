@@ -10893,6 +10893,39 @@ header {
   width: 1.5rem;
 }
 
+@media screen and (max-width: 1400px) {
+  .generalnavbar {
+    display: block;
+  }
+  .burgernavbar, .flex__header {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .generalnavbar {
+    display: block;
+  }
+  .burgernavbar, .flex__header {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .generalnavbar {
+    display: none;
+  }
+  .burgernavbar {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  .flex__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .p-4 {
+    text-align: right;
+  }
+}
 /* Présentation de l'oeuvre */
 .btn__row, #submit, .btn__row--important {
   font-family: "Josefin Sans", sans-serif;
@@ -10917,10 +10950,11 @@ header {
 }
 
 /* Carrousel */
-.carousel-item img {
-  height: 600px;
+@media screen and (max-width: 576px) {
+  .presentation__text {
+    text-align: center;
+  }
 }
-
 .extraits {
   padding: 2rem;
   text-align: center;
@@ -10970,6 +11004,7 @@ iframe {
   background-color: rgb(255, 255, 255);
   padding: 0.5rem;
   border: solid 0.25rem rgb(229, 56, 59);
+  margin-left: 0rem;
 }
 
 .acteurs__icons {
@@ -10985,6 +11020,22 @@ iframe {
   width: 100%;
 }
 
+.resume--reverse {
+  display: flex;
+}
+.resume--reverse p {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .resume--reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .resume__img {
+    margin-bottom: 1rem;
+  }
+}
 .footer1rst {
   background-color: rgb(102, 7, 8);
   border-top: solid 0.25rem rgb(255, 255, 255);
@@ -10993,7 +11044,7 @@ iframe {
 }
 
 .icon__tel, .icon__mail {
-  height: 2.5rem;
+  height: 1.5rem;
 }
 
 .lien__tel, .lien__mail {
@@ -11014,7 +11065,7 @@ iframe {
 }
 
 .footericon__facebook, .footericon__linkedin, .footericon__twitter, .footericon__instagram {
-  height: 2.5rem;
+  height: 1.5rem;
   margin: 0.25rem;
 }
 
@@ -11049,6 +11100,16 @@ iframe {
   color: rgb(211, 211, 211);
 }
 
+@media screen and (max-width: 576px) {
+  .footerlientext__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .footer__text {
+    margin-right: 0;
+  }
+}
 .faitdivers__image {
   width: 100%;
 }
@@ -11060,6 +11121,10 @@ iframe {
 
 .developpement {
   margin: 1rem;
+}
+
+.faitdivers__flex {
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {

@@ -8,7 +8,7 @@
 }
 
 .icon__tel, .icon__mail{
-    height: 2.5rem;
+    height: 1.5rem;
 }
 
 .lien__tel, .lien__mail {
@@ -30,7 +30,7 @@
 }
 
 .footericon__facebook, .footericon__linkedin, .footericon__twitter, .footericon__instagram {
-    height: 2.5rem;
+    height: 1.5rem;
     margin: 0.25rem;
 }
 
@@ -63,5 +63,17 @@
 
     p {
         color: variables.$color-8;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footerlientext__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .footer__text {
+        margin-right: 0;
     }
 }

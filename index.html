@@ -19,32 +19,69 @@
 <body>
 
     <header>
-        <nav class="navbar">
-            <form class="container-fluid header__nav">
-                <img class="header__img" src="images/logo-pirates-des-caraibes.svg" alt="Logo Pirates des Caraibes">
-                <div class="header__form">
-                    <button onclick="window.location.href = 'index.html';" class="btn btn__header me-2" type="button"><img class="header__img--icon" src="images/accueil-icon.svg" alt="Icon d'accueil"> Accueil</button>
-                    <button onclick="window.location.href = 'tournage.html';" class="btn btn__header" type="button"><img class="header__img--icon" src="images/tournage-icon.svg" alt="Icon page tournage"> Tournage</button>
+        <div class="flex__header">
+        <img class="header__img" src="images/logo-pirates-des-caraibes.svg" alt="Logo Pirates des Caraibes">
+        <div class="burgernavbar">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class=" p-4">
+                    <button onclick="window.location.href = 'index.html';" class="btn btn__header me-2"
+                    type="button"><img class="header__img--icon" src="images/accueil-icon.svg"
+                        alt="Icon d'accueil">
+                    Accueil</button>
+                <button onclick="window.location.href = 'tournage.html';" class="btn btn__header"
+                    type="button"><img class="header__img--icon" src="images/tournage-icon.svg"
+                        alt="Icon page tournage">
+                    Tournage</button>
                 </div>
-            </form>
-        </nav>
+            </div>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+        <div class="generalnavbar">
+            <nav class="navbar">
+                <form class="container-fluid header__nav">
+                    <img class="header__img" src="images/logo-pirates-des-caraibes.svg" alt="Logo Pirates des Caraibes">
+                    <div class="header__form">
+                        <button onclick="window.location.href = 'index.html';" class="btn btn__header me-2"
+                            type="button"><img class="header__img--icon" src="images/accueil-icon.svg"
+                                alt="Icon d'accueil">
+                            Accueil</button>
+                        <button onclick="window.location.href = 'tournage.html';" class="btn btn__header"
+                            type="button"><img class="header__img--icon" src="images/tournage-icon.svg"
+                                alt="Icon page tournage">
+                            Tournage</button>
+                    </div>
+                </form>
+            </nav>
+        </div>
     </header>
 
     <main>
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <h1>Présentation de l'oeuvre</h1>
-                    <p>Pirates des Caraïbes (Pirates of the Caribbean) est une franchise de films
-                        produite par Jerry Bruckheimer et Walt Disney Pictures sur la piraterie
-                        actuellement composée de cinq films réalisés entre 2003 et 2017.</p>
-                    <button type="button" class="btn btn__row" href="#"
-                        alt="Bouton Sélectionner la quantité">Sélectionner la quantité</button>
-                    <button type="button" class="btn btn__row--important" href="#" alt="Bouton Acheter maintenant">+
-                        Acheter maintenant</button>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="presentation__text">
+                        <h1>Présentation de l'oeuvre</h1>
+                        <p>Pirates des Caraïbes (Pirates of the Caribbean) est une franchise de films
+                            produite par Jerry Bruckheimer et Walt Disney Pictures sur la piraterie
+                            actuellement composée de cinq films réalisés entre 2003 et 2017.</p>
+                        <button type="button" class="btn btn__row" href="#"
+                            alt="Bouton Sélectionner la quantité">Sélectionner la quantité</button>
+                        <button type="button" class="btn btn__row--important" href="#" alt="Bouton Acheter maintenant">+
+                            Acheter maintenant</button>
+                    </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -276,22 +313,24 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <img class="resume__img" src="images/resume1.jpg" alt="Resumé 1">
+                <div class="resume--reverse">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img class="resume__img" src="images/resume1.jpg" alt="Resumé 1">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <p>Dans la mer des Caraïbes, au XVIIe siècle, Jack Sparrow, flibustier
+                            gentleman, voit sa vie idyllique basculer le jour où son ennemi,
+                            le perfide capitaine Barbossa, lui vole son bateau, le Black Pearl,
+                            puis attaque la ville de Port Royal, enlevant au passage la très belle
+                            fille du gouverneur, Elizabeth Swann. L'ami d'enfance de celle-ci, Will
+                            Turner, se joint à Jack pour se lancer aux trousses du capitaine.
+                            Mais Will ignore qu'une malédiction frappe Barbossa et ses pirates.
+                            Lorsque la lune brille, ils se transforment en morts-vivants.
+                            Leur terrible sort ne prendra fin que le jour où le fabuleux trésor
+                            qu'ils ont amassé sera restitué...</p>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <p>Dans la mer des Caraïbes, au XVIIe siècle, Jack Sparrow, flibustier
-                        gentleman, voit sa vie idyllique basculer le jour où son ennemi,
-                        le perfide capitaine Barbossa, lui vole son bateau, le Black Pearl,
-                        puis attaque la ville de Port Royal, enlevant au passage la très belle
-                        fille du gouverneur, Elizabeth Swann. L'ami d'enfance de celle-ci, Will
-                        Turner, se joint à Jack pour se lancer aux trousses du capitaine.
-                        Mais Will ignore qu'une malédiction frappe Barbossa et ses pirates.
-                        Lorsque la lune brille, ils se transforment en morts-vivants.
-                        Leur terrible sort ne prendra fin que le jour où le fabuleux trésor
-                        qu'ils ont amassé sera restitué...</p>
-                </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <p>Dans ce nouvel opus de l'aventure Pirates des Caraïbes, le toujours aussi
                         excentrique pirate Jack Sparrow est confronté subitement à son passé.
                         Treize ans auparavant, Jack signait un pacte avec Davey Jones, le maître
@@ -306,29 +345,31 @@
                         solution : retrouver le coffre maudit de Jones où sont cachés les
                         âmes emprisonnées...</p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <img class="resume__img" src="images/resume2.jpg" alt="Resumé 2">
                 </div>
-                <div class="col-lg-6">
-                    <img class="resume__img" src="images/resume3.jpg" alt="Resumé 3">
-                </div>
-                <div class="col-lg-6">
-                    <p>
-                        L'âge d'or de la piraterie touche à sa fin. Même le terrifiant Vaisseau
-                        Fantôme et son capitaine maudit Davy Jones servent à présent Lord Cutler
-                        Beckett et la Compagnie anglaise des Indes Orientales. L'invincible Hollandais
-                        Volant écume désormais les sept mers, massacrant sans pitié pirates de tous
-                        bords et sabordant leurs navires.
-                        Will Turner, Elizabeth Swann et le capitaine Barbossa n'ont qu'une seule
-                        chance de résister à Beckett et à son armada destructrice : ils doivent
-                        rassembler les Neuf Seigneurs de la Cour des Frères, mais l'un des membres
-                        les plus éminents, le capitaine Jack Sparrow, manque à l'appel.
-                        Will, Elizabeth et Barbossa, secondés par Tia Dalma, Pintel et Ragetti,
-                        doivent faire voile vers des mers orientales inconnues, pour affronter un
-                        pirate chinois, le capitaine Sao Feng, et s'emparer des cartes qui les
-                        conduiront au-delà des limites du monde connu, là où Jack est retenu...
+                <div class="resume--reverse">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img class="resume__img" src="images/resume3.jpg" alt="Resumé 3">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <p>
+                            L'âge d'or de la piraterie touche à sa fin. Même le terrifiant Vaisseau
+                            Fantôme et son capitaine maudit Davy Jones servent à présent Lord Cutler
+                            Beckett et la Compagnie anglaise des Indes Orientales. L'invincible Hollandais
+                            Volant écume désormais les sept mers, massacrant sans pitié pirates de tous
+                            bords et sabordant leurs navires.
+                            Will Turner, Elizabeth Swann et le capitaine Barbossa n'ont qu'une seule
+                            chance de résister à Beckett et à son armada destructrice : ils doivent
+                            rassembler les Neuf Seigneurs de la Cour des Frères, mais l'un des membres
+                            les plus éminents, le capitaine Jack Sparrow, manque à l'appel.
+                            Will, Elizabeth et Barbossa, secondés par Tia Dalma, Pintel et Ragetti,
+                            doivent faire voile vers des mers orientales inconnues, pour affronter un
+                            pirate chinois, le capitaine Sao Feng, et s'emparer des cartes qui les
+                            conduiront au-delà des limites du monde connu, là où Jack est retenu...
 
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -358,8 +399,8 @@
         </div>
         <div class="footer2nd">
             <div class="container-fluid">
-            <p>Cégep de Trois-Rivières</p>
-        </div>
+                <p>Cégep de Trois-Rivières</p>
+            </div>
         </div>
     </footer>
 
